@@ -110,18 +110,3 @@ body {
 .percent:hover{
     background-color: rgba(58, 71, 80, .7);
 }
-
-@media (max-width: 800px) {
-
-    .btn-num:hover {
-        background-color: #eee;
-        color:#000;
-    }
-
-    .btn-operator:hover {
-        background-color: #07689F;
-        color:#EEEEEE;
-    }
-}
-
-
