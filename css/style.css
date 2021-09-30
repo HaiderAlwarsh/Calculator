@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+*,
+html,
+body,
+p {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222831;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Grid */
+.main-container {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.calc-container {
+    display: grid;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+
+}
+
+/* Input */
+#input {
+    width: 100%;
+    padding-right: 10px;
+    font-size: 3em;
+    text-align: right;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FDFEFE;
+    background-color: #3A4750;
+    transition: all 0.3s ease-in
+}
+
+/* Btn's */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 0.3px solid rgba(251, 253, 255, 0.171);
+
+}
+
+.btn-num {
+    background-color: #3A4750;
+    color: #eee;
+}
+
+.btn-num:hover {
+    background-color: rgba(58, 71, 80, .7);
+}
+
+.btn-operator {
+
+    background-color: #EEEEEE;
+    color: #07689F;
+}
+
+.btn-operator:hover {
+    background-color: rgba(238, 238, 238, .9);
+}
+
+.equal {
+    grid-area: 4 / 4 / 6 / 4;
+    background-color: rgb(7, 104, 159);
+    color:#eee;
+}
+
+.equal:hover{
+    background-color: rgba(7, 104, 159, .7);
+}
+
+.delete{
+    grid-area: 1 / 4 / 1 / 4;
+}
+
+.percent{
+    grid-area: 5 / 1 / 5 / 1;
+    background-color: #3A4750;
+    color: #eee;
+} 
+
+.percent:hover{
+    background-color: rgba(58, 71, 80, .7);
+}
+
+@media (max-width: 800px) {
+
+    .btn-num:hover {
+        background-color: #eee;
+        color:#000;
+    }
+
+    .btn-operator:hover {
+        background-color: #07689F;
+        color:#EEEEEE;
+    }
+}
+
+
